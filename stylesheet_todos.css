@@ -1,0 +1,118 @@
+/*///////////// Base style ////////////////*/
+
+		html {
+			box-sizing: border-box;
+			font-size: 	100%;
+			font-family: courier;
+		}
+
+		*, *::before, *::after {
+			box-sizing: inherit;
+		}
+
+		body, h1, h2, h3, h4, h5, h6, p, li {
+			margin: 	5px;
+			padding: 	5px;
+		}
+
+		.wrapper {
+			width: 100%;
+			max-width: 800px;
+			margin: 10px auto;
+			padding:10px;
+			border:1px solid goldenrod;
+			background-color: #ac80a0;
+		}
+
+		header{
+			width: 100%;
+			margin: 10px auto;
+			background-color: #92dce5;
+			padding:10px;
+			text-align: center;
+		}
+
+		#todos-list{
+			width: 100%;
+			margin: 10px auto;
+			background-color: mistyrose;
+			padding:10px;
+			position: relative;
+		}
+
+		#todos-list ul{
+			list-style-type: none;
+			padding-left: 10px;
+		}
+
+		#todos-list ul li{
+			border-left: 5px solid gray;
+			height: 30px;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		#todos-list ul li:hover{
+			border-left: 5px solid goldenrod;
+			cursor: pointer;
+		}
+
+
+		#add-todos{
+			width: 100%;
+			margin: 10px auto;
+			background-color: #92dce5;
+			padding:10px;
+			text-align: center;
+			position: relative;
+		}
+
+		.delete{
+			width: 20px;
+			text-align: center;
+			padding: 2px;
+		}
+
+		.delete:hover{
+			background-color: white;
+			cursor: pointer;
+		}
+
+		form input{
+			height: 40px;
+			width:30%;
+			font-size: 15px;
+			padding:5px;
+			transition: transform .5s;
+		}
+
+		#add-todos > label{
+			margin: 0px;
+			width: 200px;
+			height: 15px;
+			position: absolute;
+			left: 20px;
+		}
+
+		form input:focus{
+			transform: scale(1.2);
+		}
+		#add-todos button {
+			margin: 5px auto;
+			background-color: purple;
+			color: white;
+			width: 100px;
+			font-size: 15px;
+			font-family: arial;
+		}
+
+		#add-todos button:hover{
+			background-color: blue;
+			color: white;
+			cursor: pointer;
+		}
+
+	
+		#todos-list ul .filtered{
+			display: none; !important
+		}
